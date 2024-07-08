@@ -1,9 +1,10 @@
 const fs = require('fs')
 const path = require('path')
 
-const args = process.argv.slice(2); 
+const args = process.argv.slice(2); // Get command line arguments
 
-if(args.length <2){
+// Check if at least two arguments are provided
+if(args.length <2){ 
     console.log('Usage: node index.js <operation> <filename> [text]');
     process.exit(1);
 }
